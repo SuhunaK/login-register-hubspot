@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hubspot - Register Page</title>
+    <style>
+        .user_present{display: none;}
+        .success_msg{display: none;}
+    </style>
+  </head>
+  <body>
+     <section class="login bg-transparent">
+         <div class="container">
+            <div class="row justify-content-center-align-self-center">
+               <div class="col-md-9 col-lg-7 col-xl-5 mx-auto">
+                  <div class="form-box p-4 px-sm-5 mt-4 bg-white">
+                     <div class="logo">
+                        <a class="d-flex justify-content-center" href="index.html"><img src="images/logo-desktop.webp" class="img-fluid" alt=""></a>
+                     </div>
+                     <hr class="mx-n4 mx-sm-n5">
+                     <p class="text-center">Create Your Personal Account</p>
+                      <div class="alert alert-success success_msg" role="alert">
+ Account Created Successfully!!!
+</div>
+          <div class="alert alert-danger user_present" role="alert">
+ Account Already Exists..!
+</div>
+                     <form id="register_form">
+                        <div class="mb-3">
+                           <label for="firstname" class="col-form-label">First Name</label>
+                           <input type="text" class="form-control" placeholder="First name" aria-label="First name" name="firstname">
+                         </div>
+                         <div class="mb-3">
+                           <label for="lastname" class="col-form-label">Last Name</label>
+                           <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" name="lastname">
+                         </div>
+                        <div class="mb-3">
+                          <label for="email" class="col-form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail3" required placeholder="Enter Your Email" name="email">
+                        </div>
+                        <div class="mb-3">
+                          <label for="password" class="col-form-label">Password</label>
+                            <input type="password" class="form-control" id="inputPassword3" required placeholder="Enter Password" name="password">
+                        </div>
+                        <div class="mb-3">
+                           <label for="confirm_password" class="col-form-label">Confirm Password</label>
+                           <input type="password" class="form-control" placeholder="Confirm Password" aria-label="Confirm Password" name="confirm_password">
+                         </div>
+                        <div class="row">
+                           <div class="col">
+                              <div class="form-check">
+                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                 <label class="form-check-label text-muted" for="flexCheckDefault">
+                                    Receive your order updates and other promotional communications from Mondelez of its products                        
+                                 </label>
+                               </div>
+                           </div>
+                        </div>
+                        <div class="d-grid my-4">
+                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                     </div>
+                      </form>
+                      <p class="text-muted text-center mb-2">
+                        Already have an account? <a href="index.html"  class="text-decoration-none">Sign In</a>
+                      </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+       </section>
+    {{!-- <section class="main py-5">
+        <div class="container">
+          <div class="px-4 py-5 my-5 text-center">
+    
+    <h1 class="display-5 fw-bold">Sign Up</h1>
+    <div class="col-lg-4 mx-auto">
+        <div class="alert alert-success success_msg" role="alert">
+ Account Created Successfully!!!
+</div>
+          <div class="alert alert-danger user_present" role="alert">
+ Account Already Exists..!
+</div>
+        <form id="register_form">
+            <div class="mb-2 text-left">
+                <label for="firstname" class="form-label">Firstname</label>
+                <input type="text" class="form-control" name="firstname" placeholder="Firstname" required>
+            </div>
+            <div class="mb-2 text-left">
+                <label for="lastname" class="form-label">Lastname</label>
+                <input type="text" class="form-control" name="lastname" placeholder="Lastname" >
+            </div>
+             <div class="mb-2 text-left">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" name="email" placeholder="Email" required>
+            </div>
+             <div class="mb-2 text-left">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" name="password" placeholder="Password" required>
+            </div>
+             <div class="mb-2 text-left">
+                <label for="confirm_password" class="form-label">Confirm Password</label>
+                <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required>
+            </div>
+            <button type="submit" class="btn btn-primary mt-2">Submit</button>
+        </form>
+        </div>
+         </div>
+        </div>
+    </section> --}}
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+ <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+ <script src="js/jquery-validate.js"></script>
+ <script type="text/javascript">
+  let email=document.querySelector('input[name=email]')
+    let firstname=document.querySelector('input[name=firstname]')
+    let lastname=document.querySelector('input[name=lastname]')
+    let password=document.querySelector('input[name=password]')
+    let confirm_password=document.querySelector('input[name=confirm_password]')
+    
+    let check_email_present=[]
+ $(document).ready(function() {
+    $( "#register_form" ).validate({
+  rules: {
+    email: {
+      required: true,
+      email:true
+    },
+    password:{
+        required: true,
+        minlength:6
+    },
+     confirm_password:{
+        required: true,
+        minlength:6
+    },
+    firstname:{
+        required:true
+    }
+  }
+});
+ })
+ let register_form=document.getElementById('register_form')
+register_form.addEventListener('submit',(e)=>{
+e.preventDefault();
+if(password.value == confirm_password.value){
+register_user();
+}
+else{
+  document.querySelector('.user_present').textContent="Password does not match confirm Password"
+  document.querySelector('.user_present').style.display="block"
+}
+})
+async function register_user(){
+        //random string
+        let length =12;
+        const characters = 'abcdefghijklmnopqrstuvwxyz';
+        let result = '';
+        const charactersLength = characters.length;
+        for(let i = 0; i < length; i++) {
+            result += 
+            characters.charAt(Math.floor(Math.random() * charactersLength));
+        }
+     let data={
+        "firstname":firstname.value,
+        "lastname":lastname.value,
+        "email":email.value,
+        "password":password.value,
+        "uid":result
+    }
+ try{
+    check_email_present= await axios.post('/register',data)
+  }
+  catch(error){
+    console.log(error)
+  }
+  console.log(check_email_present.data)
+  if(check_email_present && check_email_present.data){
+ if(check_email_present.data.error == true){
+    console.log("error")
+     document.querySelector('.user_present').textContent="Account Already Exists..!"
+document.querySelector('.user_present').style.display="block"
+  }
+  else{
+document.querySelector('.user_present').style.display="none";
+document.querySelector('.success_msg').style.display="block";
+setTimeout(()=>{
+window.location.href='/login'
+},2000)
+
+  }
+  }
+ 
+}
+/**
+async function validate_form(){
+    let check_email_present=[]
+    let email=document.querySelector('input[name=email]')
+    let firstname=document.querySelector('input[name=firstname]')
+    let lastname=document.querySelector('input[name=lastname]') 
+    let password=document.querySelector('input[name=password]')
+    let confirm_password=document.querySelector('input[name=confirm_password]')
+ if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email) && password==confirm_password)
+  {
+    let data={
+        "firstname":firstname,
+        "lastname":lastname,
+        "email":email,
+        "password":password
+    }
+ try{
+    check_email_present= await axios.post('/register',data)
+  }
+  catch(error){
+    console.log(error)
+  }
+  }
+else{
+console.log("Passwords do not match")
+console.log("email not valid")
+}
+
+    
+   console.log(check_email_present.data) 
+}**/
+ </script>
+  </body>
+</html>

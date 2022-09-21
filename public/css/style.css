@@ -1,0 +1,19 @@
+.login .form-box{-webkit-box-shadow: 0px 0px 50px -35px rgb(0 0 0 / 40%) !important;box-shadow: 0px 0px 50px -35px rgb(0 0 0 / 40%);font-family: 'Poppins', sans-serif;border-radius: 4px;}
+.login .form-box hr{opacity: 0.2;}
+.login .form-box hr.mx-n4 {margin-right: -1.5rem!important;margin-left: -1.5rem!important;}
+.login .form-box p{font-size: 20px;color: #1d1f24;}
+.login .form-box form label{font-size: 16px;font-weight: 400;line-height: 1.5;margin-bottom: 0px;}
+.login .form-box form .form-control{border-color: #dae1e3;font-size: 16px;color: #656565;padding: 13px 16px;border: 1px solid #ced4da;font-weight: 400;line-height: 1.5;}
+.form-control:focus{-webkit-box-shadow: 0 0 5px rgb(128 189 255 / 50%);box-shadow: 0 0 5px rgb(128 189 255 / 50%);border-color: #80bdff !important;}
+.login .form-box form .form-check-label, .text-end a{font-size: 14px;}
+.login .form-box form .btn{padding: 12px 40px;border-radius: 4px;-webkit-box-shadow: 0px 5px 15px rgb(0 0 0 / 15%);box-shadow: 0px 5px 15px rgb(0 0 0 / 15%);font-weight: 500;-webkit-transition: all 0.5s ease;transition: all 0.5s ease;line-height: 1.5;}
+.login .form-box form .btn-primary{background-color: #2d006b;border-color: #2d006b;color: #fff;width:100%}
+.login .form-box form .btn-primary:hover{background-color: #ca9953;border-color: #ca9953;}
+.login .form-box p.text-muted{font-size: 14px;}
+
+
+@media (min-width: 576px){.login .form-box hr.mx-sm-n5 {margin-right: -3rem!important;margin-left: -3rem!important;}}
+@media (min-width: 768px){.login .form-box form .form-check-label{font-size: 16px;} .login .form-box p.text-muted{font-size: 16px;}}
+
+label.error{color: #ef6b51;
+    font-size: 12px !important;}
